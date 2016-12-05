@@ -1,9 +1,9 @@
 import numpy as np
 import random
 random.seed(1) #ONLY FOR DEGUBGGING TO GENERATE SAME RANDOM NUMBERS AND THIS LINE CAN BE OMITTED
-n=10
-iter=1000000
-Tbar=10
+n=10 # Size of the square lattice (length of side of the square)
+iter=1000000 # Total number of times exchanges between A and B are done
+Tbar=10# Tbar is reduced temperature Tbar= kT/\Phi  ; \Phi= E_{AB}-0.5*(E_{AA}+E_{BB})
 cnt=0 # To check if no. of A = no. of B
 system=np.zeros((n,n)) # System of A and B molecules
 A=[] # list of all A molecules
